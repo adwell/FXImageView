@@ -189,6 +189,17 @@
             break;
         }
     }
+        
+    // amd: MAX_SCALE
+    static const float MAX_SCALE = 1.4;
+    float scale = MAX(rect.size.width / self.size.width, rect.size.height / self.size.height);
+    if (scale > MAX_SCALE) {
+        float w = self.size.width  * MAX_SCALE;
+        float h = self.size.height * MAX_SCALE;
+        rect = CGRectMake((size.width - w) / 2.0f, (size.height - h) / 2.0f, w, h);
+        padToFit = YES;
+        NSLog(@"fit size from %@ into %@: %@", self, NSStringFromCGSize(self.size), NSStringFromCGSize(size), NSStringFromCGRect(rect));
+    }
     
     if (!padToFit)
     {
