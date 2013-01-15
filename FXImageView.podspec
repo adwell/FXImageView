@@ -9,19 +9,19 @@ Pod::Spec.new do |s|
                     DESC
   s.homepage     = "https://github.com/nicklockwood/FXImageView"
 
-  
+
   s.license      = 'custom'
-  
+
   s.author       = { "Nick Lockwood" => "support@charcoaldesign.co.uk" }
-  s.source       = { :git => "https://github.com/nicklockwood/FXImageView.git", :tag => "1.2.3" }
- 
+  s.source       = { :git => "https://github.com/adwell/FXImageView.git", :tag => "1.2.3" }
+
 
   s.platform     = :ios
 
-  
+
   s.source_files = 'FXImageView/**/*.{h,m}'
 
-  
+
   s.requires_arc = true
 
 end
