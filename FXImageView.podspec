@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.license      = 'custom'
 
   s.author       = { "Nick Lockwood" => "support@charcoaldesign.co.uk" }
-  s.source       = { :git => "https://github.com/adwell/FXImageView.git", :tag => "1.2.3" }
+  s.source       = { :git => "https://github.com/adwell/FXImageView.git" }
 
 
   s.platform     = :ios
