@@ -198,7 +198,6 @@
         float h = self.size.height * MAX_SCALE;
         rect = CGRectMake((size.width - w) / 2.0f, (size.height - h) / 2.0f, w, h);
         padToFit = YES;
-        NSLog(@"fit size from %@ into %@: %@", self, NSStringFromCGSize(self.size), NSStringFromCGSize(size), NSStringFromCGRect(rect));
     }
     
     if (!padToFit)
