@@ -191,7 +191,7 @@
     }
         
     // amd: MAX_SCALE
-    static const float MAX_SCALE = 1.4;
+    static const float MAX_SCALE = 1.6; // 1024/640
     float scale = MAX(rect.size.width / self.size.width, rect.size.height / self.size.height);
     if (scale > MAX_SCALE) {
         float w = self.size.width  * MAX_SCALE;
